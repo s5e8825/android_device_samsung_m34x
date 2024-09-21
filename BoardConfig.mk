@@ -14,19 +14,16 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/m34x
+
 # Inherit from the common tree
 include device/samsung/universal8825-common/BoardConfigCommon.mk
 
 # Inherit from the vendor tree
 include vendor/samsung/m34x/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/m34x
-
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
-
-# DTBO
-BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/kernel/$(TARGET_DEVICE).cfg
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_m34x_defconfig
