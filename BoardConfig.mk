@@ -27,7 +27,6 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_m34x_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/universal8825-common
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := m34x
