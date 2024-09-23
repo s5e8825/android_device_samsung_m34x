@@ -14,11 +14,16 @@
 # limitations under the License.
 #
 
+VENDOR_PATH := vendor/samsung/m34x
+
 # Inherit from the common tree
 $(call inherit-product, device/samsung/universal8825-common/common.mk)
 
 # Inherit proprietary files
 $(call inherit-product, vendor/samsung/m34x/m34x-vendor.mk)
+
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt9895_m34x.bin 
 
 # Overlays (Later!)
 # DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
